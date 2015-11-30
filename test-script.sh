@@ -11,3 +11,5 @@ tar -czf test.txt.tar.gz test.txt
 ls
 
 echo "----------------------------"
+aws s3 sync test.txt.tar.gz s3://aaaa-test/
+echo "done"
